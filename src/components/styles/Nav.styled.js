@@ -79,6 +79,7 @@ export const Sidebar = styled.div`
   }
 
   .sign-out a {
+
   }
 
   @media screen and (max-width: 768px) {

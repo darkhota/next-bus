@@ -222,9 +222,13 @@ margin-bottom: 4rem;
 
 .content-section-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     margin-bottom: 8rem;
+}
+
+.partners {
+    margin-left: 2rem;
 }
 
 .content-section-1 img {

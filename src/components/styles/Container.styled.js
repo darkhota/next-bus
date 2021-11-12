@@ -8,10 +8,12 @@ export const Container = styled.div`
   height: 100vh;
   overflow: hidden;
   background: #333;
-  margin: -8px;
 
   .header {
     padding: 3.5rem;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
   }
 
   .split {
@@ -26,11 +28,32 @@ export const Container = styled.div`
     position: absolute;
     height: 100vh;
   }
+  .lower-bg {
+    position: relative;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #0080ff;
+    z-index: 0;
+  }
+  .center-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-in-img {
+    margin-top: 6rem;
+  }
+  .sign-in-img img {
+    width: 382px !important;
+  }
 
   .split.left img {
-    width: 632px;
-
-    margin-top: -100px;
+    width: 332px;
+    z-index: 7;
+    position: absolute;
   }
 
   .split.right {

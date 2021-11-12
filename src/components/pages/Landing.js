@@ -105,10 +105,6 @@ const Landing = () => {
             <img src="/img/gigm.png" alt="gigm" />
             <p>GOD IS GOOD MOBILITY</p>
           </div>
-          <div className="partners">
-            <img src="/img/brt.png" alt="gigm" />
-            <p>BUS RAPID TRANSIT (BRT)</p>
-          </div>
         </div>
         <div className="content-section-2">
           <div className="perks">

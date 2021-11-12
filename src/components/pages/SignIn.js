@@ -13,13 +13,17 @@ export default function SignIn() {
   return (
     <Container>
       <div className="split left">
+        <div className="lower-bg"></div>
         <div className="header">
           <h1>
             Get moving
             <br /> with <b>NextBus</b>
           </h1>
         </div>
-        <img src="img/Sign-up.png" alt="sign-up" />
+        <div className="center-img sign-in-img">
+          {" "}
+          <img src="img/sign-in-img.png" alt="sign-up" />
+        </div>
       </div>
       <div className="split right">
         <div className="form-container">
