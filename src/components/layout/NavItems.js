@@ -2,24 +2,24 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 export const navItems = [
   {
     id: 1,
-    title: "Home",
-    path: "./",
+    title: "Dashboard",
+    path: "./dashboard",
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <img src="img/dash.png" alt="bus" />
   },
   {
     id: 2,
-    title: "Home",
-    path: "./",
+    title: "My Trips",
+    path: "./my-trips",
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <img src="img/bus-small.png" alt="bus" />
   },
   {
     id: 3,
-    title: "Home",
-    path: "./",
+    title: "Access Cards",
+    path: "./access-cards",
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <img src="img/card.png" alt="bus" />
@@ -33,7 +33,7 @@ export const navItems = [
     icon: <img src="img/wallet.png" alt="bus" />
   },
   {
-    id: 4,
+    id: 5,
     title: "Settings",
     path: "./",
     nName: "nav-item",

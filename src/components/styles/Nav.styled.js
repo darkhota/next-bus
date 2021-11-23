@@ -22,6 +22,7 @@ export const Sidebar = styled.div`
   .logo img {
     width: 170px;
     height: 60px;
+    object-fit: cover;
   }
 
   .sidebar-items {
@@ -79,7 +80,6 @@ export const Sidebar = styled.div`
   }
 
   .sign-out a {
-
   }
 
   @media screen and (max-width: 768px) {
@@ -115,5 +115,14 @@ export const Nav = styled.div`
     font-weight: 300;
     display: flex;
     align-items: center;
+  }
+`;
+
+export const Layout = styled.div`
+  .inner-container {
+    position: relative;
+    left: 16rem;
+    width: 80%;
+    height: 80%;
   }
 `;
