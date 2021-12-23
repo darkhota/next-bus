@@ -4,10 +4,13 @@ import Landing from "./components/pages/Landing";
 import NavBar from "./components/layout/NavBar";
 import Dash from "./components/pages/Dashboard";
 import MyTrips from "./components/pages/MyTrips";
+import Joined from "./components/pages/Joined";
+import ShareRide from "./components/pages/ShareRide";
+import Feedback from "./components/pages/Feedback";
 import AccessCards from "./components/pages/AccessCards";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import { Container } from "./components/styles/Container.styled";
+// import { Container } from "./components/styles/Container.styled";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Switch>
             <Route path="/dashboard" component={Dash}></Route>
             <Route path="/my-trips" component={MyTrips}></Route>
+            <Route path="/joined" component={Joined}></Route>
+            <Route path="/share-ride" component={ShareRide}></Route>
+            <Route path="/feedback" component={Feedback}></Route>
             <Route path="/access-cards" component={AccessCards}></Route>
           </Switch>
         </NavBar>
