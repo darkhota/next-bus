@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/sign-in" component={SignIn}></Route>
-        <Route path="/home" component={Landing}></Route>
+        <Route path="/" component={Landing} exact></Route>
         <Route path="/sign-up" component={SignUp}></Route>
         {/* <Route path="/dashboard" component={Dash}></Route> */}
         <NavBar>
