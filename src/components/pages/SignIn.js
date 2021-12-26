@@ -51,7 +51,7 @@ export default function SignIn() {
               />
               <h4 className="reset">Reset Password</h4>
             </Stack>
-            <Button variant="contained" size="large">
+            <Button variant="contained" size="large" className="sign-in-btn">
               SIGN IN
             </Button>
 

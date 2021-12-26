@@ -53,7 +53,7 @@ export default function SignUp() {
                 </span>
               }
             />
-            <Button variant="contained" size="large">
+            <Button variant="contained" size="large" className="sign-in-btn">
               CREATE AN ACCOUNT
             </Button>
 
