@@ -41,12 +41,13 @@ export default function SignUp() {
             <FormControlLabel
               control={
                 <Checkbox
+                  className="check-box"
                   defaultChecked
                   sx={{ "& .MuiSvgIcon-root": { fontSize: 28 } }}
                 />
               }
               label={
-                <span>
+                <span className="terms">
                   By creating an account, you agree to our{" "}
                   <Link to="#">Terms of Use</Link> and
                   <Link to="#"> Privacy Policy</Link>{" "}

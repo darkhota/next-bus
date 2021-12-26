@@ -121,11 +121,10 @@ export const Container = styled.div`
     margin-inline-start: auto;
   }
 
-  .css-1oakzvg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
-  .css-1oakzvg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  .check-box{
     color: #0f17c3 !important;
   }
-  .css-ahj2mt-MuiTypography-root {
+  .terms {
     font-size: 13px !important;
   }
 
@@ -173,7 +172,7 @@ export const Container = styled.div`
     width: 30%;
   }
 
-  .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+  .left-btn, .right-btn {
     padding: 0.8rem;
     border: 1px solid #a4a1a1;
     color: #000;

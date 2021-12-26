@@ -43,11 +43,12 @@ export default function SignIn() {
               <FormControlLabel
                 control={
                   <Checkbox
+                    className="check-box"
                     defaultChecked
                     sx={{ "& .MuiSvgIcon-root": { fontSize: 28 } }}
                   />
                 }
-                label={<span>Remember me</span>}
+                label={<span className="terms">Remember me</span>}
               />
               <h4 className="reset">Reset Password</h4>
             </Stack>
