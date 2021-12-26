@@ -86,14 +86,14 @@ export const Cards = styled.div`
     font-size: 12px;
   }
 
-  .formWrapper_3lgagk {
+  .form-wrapper {
     max-width: 100% !important;
     border: none !important;
   }
 
-  .formBody_1hyhy3p {
+  .form-body {
     padding: 0 !important;
-    width: 75%;
+    width: 100%;
   }
   .inputGroup_c7qll8-o_O-splitInputGroup_rd1twh {
     flex-wrap: wrap;
@@ -102,7 +102,7 @@ export const Cards = styled.div`
     margin-top: 1rem;
     width: 100% !important;
   }
-  .payButton_5jrfs2 {
+  .pay-btn {
     background-color: #0f17c3 !important;
   }
 

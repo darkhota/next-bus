@@ -10,7 +10,7 @@ const ShareRide = () => {
   return (
     <Share>
       <h2>Share your ride details!</h2>
-      <div className="img-container">
+      <div className="img-cont">
         <img src="/img/share-img.png" alt="share" />
       </div>
 

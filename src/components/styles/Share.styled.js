@@ -19,7 +19,7 @@ export const Share = styled.div`
     font-size: 16px;
   }
 
-  .img-container img {
+  .img-cont img {
     width: 400px;
   }
 
@@ -63,6 +63,9 @@ export const Share = styled.div`
     }
     button p {
       margin-left: -1rem;
+    }
+    .img-cont img {
+      width: 200px;
     }
   }
 `;

@@ -207,7 +207,7 @@ class CreditCardForm extends Component {
     } = this.state;
 
     return (
-      <div className={css(styles.formWrapper)}>
+      <div className="form-wrapper">
         {/* <div className={css(styles.formHeader)}>
           <p className={css(styles.formHeaderText)}>Visa, Mastercard, Amex</p>
           <img
@@ -216,7 +216,7 @@ class CreditCardForm extends Component {
             src="https://png.icons8.com/ultraviolet/45/000000/bank-card-back-side.png"
           />
         </div> */}
-        <div className={css(styles.formBody)}>
+        <div className="form-body">
           <div className={css(styles.inputGroup)}>
             <CardNumberInput
               placeholder="4111 1111 1111 1111"
@@ -255,7 +255,7 @@ class CreditCardForm extends Component {
             </div>
           </div>
 
-          <button onClick={this.validateForm} className={css(styles.payButton)}>
+          <button onClick={this.validateForm} className="pay-btn">
             Pay NGN 3,200.00
           </button>
         </div>
