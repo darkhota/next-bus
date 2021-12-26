@@ -90,7 +90,7 @@ const AccessCards = () => {
                   <h5>Account number</h5>
                   <input type="number" />
                 </div>
-                <button className="pay-btn">Pay NGN 3,200.00</button>
+                <button className="pay-btn pay-btn2">Pay NGN 3,200.00</button>
               </form>
             </div>
           )}

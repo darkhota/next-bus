@@ -217,7 +217,7 @@ class CreditCardForm extends Component {
           />
         </div> */}
         <div className="form-body">
-          <div className={css(styles.inputGroup)}>
+          <div className="input-group">
             <CardNumberInput
               placeholder="4111 1111 1111 1111"
               value={cardNumber}
@@ -227,8 +227,8 @@ class CreditCardForm extends Component {
             />
           </div>
 
-          <div className={css(styles.inputGroup, styles.splitInputGroup)}>
-            <div className={css(styles.splitInputGroupItem)}>
+          <div className="input-group split">
+            <div className="split-item">
               <CardExpiryInput
                 placeholder="MM / YY"
                 value={cardExpiry}
@@ -237,7 +237,7 @@ class CreditCardForm extends Component {
                 onBlur={this.handleCardExpiryBlur}
               />
             </div>
-            <div className={css(styles.splitInputGroupItem)}>
+            <div className="split-item">
               <CardCVVInput
                 value={cardCVV}
                 error={cardCVVError}
@@ -245,7 +245,7 @@ class CreditCardForm extends Component {
                 onBlur={this.handleCardCVVBlur}
               />
             </div>
-            <div className={css(styles.inputGroup)}>
+            <div className="input-group">
               <CardHolderNameInput
                 value={nameOnCard}
                 error={nameOnCardError}

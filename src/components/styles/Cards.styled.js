@@ -93,12 +93,17 @@ export const Cards = styled.div`
 
   .form-body {
     padding: 0 !important;
-    width: 100%;
+    width: 75%;
   }
-  .inputGroup_c7qll8-o_O-splitInputGroup_rd1twh {
+  .split {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
   }
-  .inputGroup_c7qll8 {
+  .split-item {
+    width: 45%;
+  }
+  .input-group {
     margin-top: 1rem;
     width: 100% !important;
   }
@@ -128,7 +133,7 @@ export const Cards = styled.div`
   }
 
   .pay-btn {
-    width: 75%;
+    width: 100%;
     height: 50px;
     background-color: #0f17c3;
     border-width: 0;
@@ -138,6 +143,10 @@ export const Cards = styled.div`
     border-radius: 4px;
     text-transform: uppercase;
     cursor: pointer;
+  }
+
+  .pay-btn2 {
+    width: 73% !important;
   }
 
   .form-footer {
@@ -180,7 +189,7 @@ export const Cards = styled.div`
     .form-footer {
       width: 90%;
     }
-    .formBody_1hyhy3p {
+    .form-body {
       width: 100%;
     }
     h5 {
@@ -189,8 +198,9 @@ export const Cards = styled.div`
     .input-group input {
       width: 90%;
     }
-    .pay-btn {
-      width: 100%;
+    .pay-btn,
+    pay-btn2 {
+      width: 100% !important;
     }
   }
 `;
