@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FeedBack } from "../styles/FeedBack.styled";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";

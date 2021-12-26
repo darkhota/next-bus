@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LandingP } from "../styles/LandingP.styled";
+import {Link} from 'react-router-dom'
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 const Landing = () => {
@@ -12,12 +13,12 @@ const Landing = () => {
           <div className="links">
             <ul id={showLinks ? "hidden" : ""}>
               <li>
-                <a href="#" className="current">
+                <Link to="#" className="current">
                   About NextBus
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">Help</a>
+                <Link to="#">Help</Link>
               </li>
 
               <button className="btn btn-white">SIGN IN</button>

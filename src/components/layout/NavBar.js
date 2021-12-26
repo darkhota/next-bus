@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navItems } from "./NavItems";
-import {
-  Layout,
-  DashContainer,
-  Sidebar,
-  Nav,
-  MainContent
-} from "../styles/Nav.styled";
+import { Layout, DashContainer } from "../styles/Nav.styled";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import MenuIcon from "@mui/icons-material/Menu";
 

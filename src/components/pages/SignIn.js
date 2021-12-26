@@ -1,12 +1,9 @@
 import { Container } from "../styles/Container.styled";
-import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 export default function SignIn() {
@@ -68,12 +65,12 @@ export default function SignIn() {
               <Button
                 variant="outlined"
                 className="left-btn"
-                startIcon={<img src="img/google.png"></img>}
+                startIcon={<img src="img/google.png" alt="google"></img>}
               >
                 Continue with Google
               </Button>
               <Button variant="outlined" className="right-btn">
-                <img src="img/facebook.png"></img>
+                <img src="img/facebook.png" alt="facebook"></img>
               </Button>
             </Stack>
             <p>

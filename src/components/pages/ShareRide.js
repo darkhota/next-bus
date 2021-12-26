@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Share } from "../styles/Share.styled";
-import Rating from "@mui/material/Rating";
-import StarIcon from "@mui/icons-material/Star";
 
 const ShareRide = () => {
   const [copied, setCopied] = useState(false);

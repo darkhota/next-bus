@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import PlacesAutocomplete, {
-  geocodeByAddress,
-  geocodeByPlaceId,
-  getLatLng
+  geocodeByAddress
 } from "react-places-autocomplete";
 import { Map } from "../styles/Map.styled";
 
 const MyTrips = ({ center, zoom }) => {
   const [step, setStep] = useState(1);
-  const [pickup, setPickup] = useState("");
-  const [dropOff, setDropOff] = useState("");
+  // const [pickup, setPickup] = useState("");
+  // const [dropOff, setDropOff] = useState("");
   const [passengers, setPassengers] = useState(0);
   const [address, setAddress] = useState("");
   const [address2, setAddress2] = useState("");
@@ -44,11 +42,6 @@ const MyTrips = ({ center, zoom }) => {
   const setBusGIG = () => {
     setBusType(busType => "gig");
   };
-  const handleKeyDown = event => {
-    if (event.key === "Enter") {
-      nextStep();
-    }
-  };
 
   const updateData = (type, newData) => {
     setData(data => {
@@ -77,11 +70,15 @@ const MyTrips = ({ center, zoom }) => {
       .then(latLng => console.log("Success", latLng))
       .catch(error => console.error("Error", error));
   };
+
+  useEffect(() => {
+    console.log(process.env.REACT_APP_API_KEY);
+  }, []);
   return (
     <Map>
       <div className="map">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBl3hsfrJQ5TgpSiGfJbxqBJ2v_igpwO5c" }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
           defaultCenter={center}
           defaultZoom={zoom}
         ></GoogleMapReact>

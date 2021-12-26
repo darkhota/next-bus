@@ -1,4 +1,3 @@
-import ReorderIcon from "@mui/icons-material/Reorder";
 export const navItems = [
   {
     id: 1,

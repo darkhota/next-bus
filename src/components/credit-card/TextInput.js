@@ -142,10 +142,10 @@ export default class TextInput extends Component {
       ? styles.ErrorBorderBox
       : styles.ValidBorderBox;
 
-    const BorderedBoxStyles = {
-      ...styles.BorderedBox,
-      ...BorderedBoxActiveStateStyles
-    };
+    // const BorderedBoxStyles = {
+    //   ...styles.BorderedBox,
+    //   ...BorderedBoxActiveStateStyles
+    // };
 
     return (
       <div
