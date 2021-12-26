@@ -5,7 +5,7 @@ export const Map = styled.div`
   font-family: Manrope, sans-serif;
   .map {
     width: 100%;
-    height: 88vh;
+    height: calc(100vh - 80px);
     position: relative;
   }
   .location-card {
@@ -28,10 +28,12 @@ export const Map = styled.div`
     font-weight: 600;
     margin-left: 40px;
     display: flex;
+    transition: all 0.5s ease;
   }
 
   .bigger {
     font-size: 45px;
+    margin: 0;
   }
 
   .form-header h1 img {
@@ -39,7 +41,7 @@ export const Map = styled.div`
   }
   .form-header .border {
     position: absolute;
-    top: 70px;
+    top: 50px;
     margin-right: 1rem;
   }
   .form {
@@ -89,6 +91,7 @@ export const Map = styled.div`
 
   .btn-container {
     position: relative;
+    margin-bottom: 1rem;
   }
 
   .btn-container button {
@@ -215,5 +218,28 @@ export const Map = styled.div`
   }
   .content-desc h6 {
     font-weight: lighter;
+  }
+
+  @media screen and (max-width: 768px) {
+    .location-card {
+      width: 90%;
+    }
+    .form-header {
+      height: 110px;
+    }
+    .form-header h1 {
+      font-size: 20px;
+    }
+    .bigger {
+      font-size: 30px !important;
+      margin: 0;
+    }
+    .form-header h1 img {
+      width: 20px;
+    }
+    .form-header .border {
+      top: 38px;
+      height: 50px;
+    }
   }
 `;

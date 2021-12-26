@@ -1,6 +1,5 @@
 import React from "react";
 import { Cards } from "../styles/Cards.styled";
-import CreditCardInput from "react-credit-card-input";
 import CreditCardForm from "../credit-card/CreditCardForm";
 
 const AccessCards = () => {
@@ -15,7 +14,7 @@ const AccessCards = () => {
       <div className="container">
         <div className="left">
           <h2>Fund your NextBus Access Card for seamless payment</h2>
-          <div className="img-container">
+          <div className="image-container">
             <img src="img/atm-card.png" alt="card" />
           </div>
           <h3>Your Trip Details</h3>

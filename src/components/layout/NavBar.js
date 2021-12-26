@@ -1,16 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { navItems } from "./NavItems";
-import { Layout, DashContainer, Sidebar, Nav } from "../styles/Nav.styled";
+import {
+  Layout,
+  DashContainer,
+  Sidebar,
+  Nav,
+  MainContent
+} from "../styles/Nav.styled";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const NavBar = props => {
+  const [active, setActive] = useState(false);
+
+  const toggleMenu = () => {
+    setActive(active => !active);
+  };
   return (
     <Layout>
       <DashContainer>
-        <Sidebar>
+        <div className={` sidebar ${active === true ? "active" : ""}`}>
           <div className="logo">
             <img src="img/logo.png" alt="" />
+            <MenuIcon className="menu-icon" onClick={toggleMenu} />
           </div>
           <ul className="sidebar-items">
             {navItems.map(item => {
@@ -30,17 +43,21 @@ const NavBar = props => {
               </Link>
             </div>
           </ul>
-        </Sidebar>
-        <Nav>
-          <div className="img-container">
-            <img src="img/bell.png" alt="notification" />
+        </div>
+
+        <div className="main-content">
+          <div className="nav">
+            <div className="img-container">
+              <img src="img/bell.png" alt="notification" />
+            </div>
+            <h3>
+              Adebukola Ibirogba <ArrowDropDownIcon />
+            </h3>
           </div>
-          <h3>
-            Adebukola Ibirogba <ArrowDropDownIcon />
-          </h3>
-        </Nav>
+
+          <div className="inner-container">{props.children}</div>
+        </div>
       </DashContainer>
-      <div className="inner-container">{props.children}</div>
     </Layout>
   );
 };

@@ -31,4 +31,10 @@ export const Dash = styled.div`
     border-radius: 4.34px;
     width: 100px;
   }
+
+  @media (max-width: 768px) {
+    img {
+      width: 250px;
+    }
+  }
 `;

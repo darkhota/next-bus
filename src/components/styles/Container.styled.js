@@ -201,6 +201,9 @@ export const Container = styled.div`
     .split.left {
       display: none;
     }
+    .form-container{
+      padding: 1rem;
+    }
     form {
       left: initial;
       width: 90%;
@@ -220,4 +223,9 @@ export const Container = styled.div`
       margin-top: 1rem;
     }
   }
+  @media (max-height: 540px) {
+    .split{
+      overflow-x: scroll;
+    }
+
 `;

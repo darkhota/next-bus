@@ -27,8 +27,12 @@ export const Join = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    align-items: center;
   }
 
+  h2 {
+    font-size: 24px;
+  }
   .trip-desc,
   .driver-desc {
     border-bottom: 0.5px solid rgba(82, 82, 92, 0.5);
@@ -57,5 +61,38 @@ export const Join = styled.div`
   h3,
   p {
     color: #52525c;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ride-details {
+      width: 80%;
+    }
+    h2 {
+      font-size: 12px;
+    }
+
+    h2 img,
+    .trip-desc img {
+      width: 20px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .bus-desc img {
+      width: 80px;
+    }
+    h3 {
+      font-size: 50%;
+    }
+    .driver-desc img {
+      width: 50px;
+    }
+    a {
+      font-size: 12px;
+      display: flex;
+    }
+    a img {
+      width: 15px;
+    }
   }
 `;

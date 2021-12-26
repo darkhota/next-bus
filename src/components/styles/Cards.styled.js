@@ -27,17 +27,18 @@ export const Cards = styled.div`
     padding: 1rem;
   }
 
-  .img-container {
+  .image-container {
     display: flex;
     justify-content: center;
   }
-  .img-container img {
+  .image-container img {
     width: 250px;
     object-fit: cover;
   }
 
   h3 {
     font-weight: 600;
+    color: #000;
   }
 
   .row {
@@ -150,5 +151,46 @@ export const Cards = styled.div`
     margin-left: 0.5rem;
     font-size: 14px;
     font-weight: 600;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    .container {
+      display: inline-block;
+      overflow-x: scroll;
+      width: -webkit-fill-available;
+      height: 88vh;
+    }
+    .left {
+      width: 76%;
+    }
+    h2 {
+      width: 95%;
+      font-size: 15px;
+      margin-left: 0;
+    }
+    .image-container img {
+      width: 200px;
+    }
+    .row img {
+      width: 70px;
+    }
+    .right {
+      width: 76%;
+    }
+    .form-footer {
+      width: 90%;
+    }
+    .formBody_1hyhy3p {
+      width: 100%;
+    }
+    h5 {
+      width: 80px;
+    }
+    .input-group input {
+      width: 90%;
+    }
+    .pay-btn {
+      width: 100%;
+    }
   }
 `;

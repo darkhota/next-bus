@@ -12,6 +12,13 @@ export const Share = styled.div`
   flex-direction: column;
   align-items: center;
 
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+
   .img-container img {
     width: 400px;
   }
@@ -38,5 +45,24 @@ export const Share = styled.div`
 
   .whatsapp-btn {
     background: #42c453;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      text-align-last: center;
+      font-size: 14px;
+    }
+    .img-container img {
+      width: 200px;
+    }
+    button {
+      width: 200px;
+    }
+    button p {
+      margin-left: -1rem;
+    }
   }
 `;

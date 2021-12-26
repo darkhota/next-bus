@@ -108,4 +108,37 @@ export const FeedBack = styled.div`
     width: 90%;
     border-radius: 5px;
   }
+  .css-iljtu2-MuiRating-root {
+    color: #0e61d9;
+  }
+
+  @media screen and (max-width: 768px) {
+    .feedback-card {
+      width: 80%;
+    }
+    .feedback-card h2 {
+      font-size: 20px;
+    }
+    button {
+      font-size: 10px;
+      padding: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .feedback-card h2 {
+      font-size: 15px;
+    }
+    h6 {
+      font-size: 10px;
+    }
+    .locations h6 {
+      margin-bottom: 1.1rem;
+    }
+    .emoji {
+      width: 20px;
+    }
+    .trip-details .border {
+      height: 45px;
+    }
+  }
 `;

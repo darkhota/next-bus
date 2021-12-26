@@ -6,52 +6,52 @@ import StarIcon from "@mui/icons-material/Star";
 const labels = {
   0.5: (
     <div>
-      <img src="img/bad.png" alt="bad" /> <p>bad</p>
+      <img className="emoji" src="img/bad.png" alt="bad" /> <p>bad</p>
     </div>
   ),
   1: (
     <div>
-      <img src="img/bad.png" alt="bad" /> <p>bad</p>
+      <img className="emoji" src="img/bad.png" alt="bad" /> <p>bad</p>
     </div>
   ),
   1.5: (
     <div>
-      <img src="img/bad.png" alt="bad" /> <p>bad</p>
+      <img className="emoji" src="img/bad.png" alt="bad" /> <p>bad</p>
     </div>
   ),
   2: (
     <div>
-      <img src="img/bad.png" alt="bad" /> <p>bad</p>
+      <img className="emoji" src="img/bad.png" alt="bad" /> <p>bad</p>
     </div>
   ),
   2.5: (
     <div>
-      <img src="img/ok.png" alt="ok" /> <p>ok</p>
+      <img className="emoji" src="img/ok.png" alt="ok" /> <p>ok</p>
     </div>
   ),
   3: (
     <div>
-      <img src="img/ok.png" alt="ok" /> <p>ok</p>
+      <img className="emoji" src="img/ok.png" alt="ok" /> <p>ok</p>
     </div>
   ),
   3.5: (
     <div>
-      <img src="img/ok.png" alt="ok" /> <p>ok</p>
+      <img className="emoji" src="img/ok.png" alt="ok" /> <p>ok</p>
     </div>
   ),
   4: (
     <div>
-      <img src="img/ok.png" alt="ok" /> <p>ok</p>
+      <img className="emoji" src="img/ok.png" alt="ok" /> <p>ok</p>
     </div>
   ),
   4.5: (
     <div>
-      <img src="img/great.png" alt="great" /> <p>Great</p>
+      <img className="emoji" src="img/great.png" alt="great" /> <p>Great</p>
     </div>
   ),
   5: (
     <div>
-      <img src="img/great.png" alt="great" /> <p>Great</p>
+      <img className="emoji" src="img/great.png" alt="great" /> <p>Great</p>
     </div>
   )
 };
@@ -99,7 +99,11 @@ const Feedback = () => {
               setHover(newHover);
             }}
             emptyIcon={
-              <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
+              <StarIcon
+                style={{ opacity: 0.55 }}
+                fontSize="inherit"
+                color="#0e61d9"
+              />
             }
           />
           {value !== null && (

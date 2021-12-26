@@ -1,16 +1,42 @@
 import styled from "styled-components";
 export const DashContainer = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;800&display=swap");
-  display: flex;
+
   font-family: "Manrope", sans-serif;
-`;
-export const Sidebar = styled.div`
-  width: 16rem;
-  background: #fff;
-  box-shadow: 0px 10px 20px rgba(20, 46, 110, 0.25);
-  height: 100vh;
-  position: absolute;
-  transition: 0.3s all ease-in-out;
+  .inner-container {
+    position: relative;
+  }
+
+  .sidebar.active ~ .main-content {
+    width: calc(100% - 16rem);
+    left: 16rem;
+    transition: all 0.5s ease;
+  }
+
+  sidebar.active ~ .nav {
+    width: calc(100% - 16rem);
+  }
+
+  .sidebar {
+    width: 5rem;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(20, 46, 110, 0.25);
+    height: 100vh;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .sidebar.active {
+    width: 16rem;
+    transition: 0.3s all ease-in-out;
+  }
+  .sidebar.active .sidebar-item a span {
+    display: block;
+  }
+  .sidebar.active .logo img {
+    opacity: 1;
+    pointer-events: none;
+  }
 
   .logo {
     display: flex;
@@ -23,6 +49,16 @@ export const Sidebar = styled.div`
     width: 170px;
     height: 60px;
     object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar.active .menu-icon {
+    left: 85%;
+  }
+  .menu-icon {
+    position: absolute;
+    color: #0f17c3;
+    left: 40%;
   }
 
   .sidebar-items {
@@ -32,6 +68,7 @@ export const Sidebar = styled.div`
     flex-direction: column;
     transition: 0.2s all ease-out;
     margin-top: 4rem;
+    margin-left: -20px;
   }
   .sidebar-item {
     list-style: none;
@@ -59,6 +96,8 @@ export const Sidebar = styled.div`
   .sign-out a span {
     margin-left: 1rem;
     font-size: 18px;
+    display: none;
+    transition: all 0.5s ease;
   }
   .sidebar-item a:hover {
     background: #0f17c3;
@@ -88,16 +127,35 @@ export const Sidebar = styled.div`
     .sidebar-item a span {
       display: none;
     }
+    .logo img {
+      display: none;
+    }
   }
-`;
-export const Nav = styled.div`
-  background: #0f17c3;
-  display: flex;
-  width: 100%;
-  height: 80px;
-  padding-right: 2rem;
-  align-items: center;
-  justify-content: flex-end;
+
+  .main-content {
+    position: absolute;
+    height: 100vh;
+    width: calc(100% - 5rem);
+    left: 5rem;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-content {
+      width: calc(100% - 5rem);
+      left: 5rem;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .nav {
+    background: #0f17c3;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
   .img-container {
     background: #0080ff;
@@ -116,13 +174,32 @@ export const Nav = styled.div`
     display: flex;
     align-items: center;
   }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 90%;
+    }
+    .img-container img {
+      width: 15px;
+    }
+    .img-container {
+      padding: 0.5rem;
+      margin-right: 1rem;
+    }
+    .sidebar.active ~ .main-content {
+      width: calc(100% - 5rem);
+      left: 5rem;
+      z-index: -1;
+      transition: all 0.5s ease;
+    }
+  }
 `;
 
 export const Layout = styled.div`
-  .inner-container {
-    position: relative;
-    left: 16rem;
-    width: 80%;
-    height: 80%;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    .inner-container {
+      left: 0%;
+    }
   }
 `;
