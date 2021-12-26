@@ -54,9 +54,11 @@ export default function SignUp() {
                 </span>
               }
             />
-            <Button variant="contained" size="large" className="sign-in-btn">
-              CREATE AN ACCOUNT
-            </Button>
+            <Link to="/dashboard">
+              <Button variant="contained" size="large" className="sign-in-btn">
+                CREATE AN ACCOUNT
+              </Button>
+            </Link>
 
             <div className="hr-top">
               <h2>

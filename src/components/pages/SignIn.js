@@ -52,9 +52,11 @@ export default function SignIn() {
               />
               <h4 className="reset">Reset Password</h4>
             </Stack>
-            <Button variant="contained" size="large" className="sign-in-btn">
-              SIGN IN
-            </Button>
+            <Link to="/dashboard">
+              <Button variant="contained" size="large" className="sign-in-btn">
+                SIGN IN
+              </Button>
+            </Link>
 
             <div className="hr-top">
               <h2>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LandingP } from "../styles/LandingP.styled";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 const Landing = () => {
@@ -20,10 +20,12 @@ const Landing = () => {
               <li>
                 <Link to="#">Help</Link>
               </li>
-
-              <button className="btn btn-white">SIGN IN</button>
-
-              <button className="btn btn-blue">SIGN UP</button>
+              <Link to="/sign-in">
+                <button className="btn btn-white">SIGN IN</button>
+              </Link>
+              <Link to="/sign-up">
+                <button className="btn btn-blue">SIGN UP</button>
+              </Link>
             </ul>
           </div>
 
@@ -137,7 +139,9 @@ const Landing = () => {
 
       <section className="content-4">
         <h1>Ready to Ride?</h1>
-        <button className="btn light-btn">SIGN UP</button>
+        <Link to="/sign-up">
+          <button className="btn light-btn">SIGN UP</button>
+        </Link>
       </section>
 
       <footer>
