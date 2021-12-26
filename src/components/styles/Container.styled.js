@@ -123,22 +123,22 @@ export const Container = styled.div`
 
   .css-1oakzvg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
   .css-1oakzvg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
-    color: #0f17c3;
+    color: #0f17c3 !important;
   }
   .css-ahj2mt-MuiTypography-root {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 
   .css-jh47zj-MuiButtonBase-root-MuiButton-root {
-    background-color: #0f17c3;
+    background-color: #0f17c3 !important;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
       0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-    width: 100%;
-    letter-spacing: 0.1em;
-    padding: 1rem;
-    font-size: 12px;
-    font-weight: 300;
-    margin-top: 1rem;
+    width: 100% !important;
+    letter-spacing: 0.1em !important;
+    padding: 1rem !important;
+    font-size: 12px !important;
+    font-weight: 300!important;
+    margin-top: 1rem!important;
   }
 
   .hr-top {
